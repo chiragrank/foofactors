@@ -1,0 +1,41 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# foofactors
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Factors are a very useful type of variable in R, but they can also be very aggravating. This package provides some helper functions for the care and feeding of factors.
+
+
+## Installation
+
+You can install the released version of foofactors from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+devtools::install_github("chiragrank/foofactors")
+```
+
+## Example
+
+```{r example}
+library(foofactors)
+## basic example code
+a <- factor(c("character", "hits", "your", "eyeballs"))
+b <- factor(c("but", "integer", "where it", "counts"))
+fbind(a, b)
+```
+
